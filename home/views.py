@@ -11,7 +11,7 @@ from .serializers import XizmatlarSerializer, CategorySerializer, CommitesSerial
 class MessageViewSet(ModelViewSet):
     queryset = Message.objects.all()
     serializer_class = MessageSerializer
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
     filter_backends = [filters.SearchFilter]
     search_fields = ['yourname']
 
